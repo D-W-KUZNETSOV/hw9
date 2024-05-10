@@ -7,13 +7,11 @@ public class Main {
         payments[2] = 300;
         payments[3] = 100;
         payments[4] = 500;
-        int paymentsMount = 0;
         int paymentsSumm = 0;
         for (int elements = 0; elements < payments.length; elements++) {
             paymentsSumm += payments[elements];
-            paymentsMount = paymentsSumm * 4;
         }
-        System.out.println("Сумма трат за месяц составила " + paymentsMount + " рублей");
+        System.out.println("Сумма трат за месяц составила " + paymentsSumm + " рублей");
 
         int[] wastes = new int[5];
         wastes[0] = 500;
@@ -44,7 +42,7 @@ public class Main {
         int average = 0;
         for (int j = 0; j < wastes1.length; j++) {
             summWastes1 += wastes1[j];
-            average = (summWastes1 * 4) / 4;
+            average = summWastes1 / wastes1.length;
         }
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
